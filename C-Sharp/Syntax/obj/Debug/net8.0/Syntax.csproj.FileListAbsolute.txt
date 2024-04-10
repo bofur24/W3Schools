@@ -1,0 +1,15 @@
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\bin\Debug\net8.0\Syntax.exe
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\bin\Debug\net8.0\Syntax.deps.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\bin\Debug\net8.0\Syntax.runtimeconfig.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\bin\Debug\net8.0\Syntax.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\bin\Debug\net8.0\Syntax.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.AssemblyInfoInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.AssemblyInfo.cs
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.csproj.CoreCompileInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.sourcelink.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\refint\Syntax.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\Syntax.genruntimeconfig.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Syntax\obj\Debug\net8.0\ref\Syntax.dll
