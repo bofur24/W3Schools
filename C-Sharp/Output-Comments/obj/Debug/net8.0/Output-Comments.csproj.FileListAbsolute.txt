@@ -1,0 +1,15 @@
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\bin\Debug\net8.0\Output-Comments.exe
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\bin\Debug\net8.0\Output-Comments.deps.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\bin\Debug\net8.0\Output-Comments.runtimeconfig.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\bin\Debug\net8.0\Output-Comments.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\bin\Debug\net8.0\Output-Comments.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.AssemblyInfoInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.AssemblyInfo.cs
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.csproj.CoreCompileInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.sourcelink.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\refint\Output-Comments.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\Output-Comments.genruntimeconfig.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Output-Comments\obj\Debug\net8.0\ref\Output-Comments.dll
