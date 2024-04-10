@@ -1,0 +1,15 @@
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\bin\Debug\net8.0\Introduction-Home.exe
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\bin\Debug\net8.0\Introduction-Home.deps.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\bin\Debug\net8.0\Introduction-Home.runtimeconfig.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\bin\Debug\net8.0\Introduction-Home.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\bin\Debug\net8.0\Introduction-Home.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.AssemblyInfoInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.AssemblyInfo.cs
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.csproj.CoreCompileInputs.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.sourcelink.json
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\refint\Introduction-Home.dll
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.pdb
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\Introduction-Home.genruntimeconfig.cache
+C:\Users\HeffingtonKL\OneDrive\Files\Programming\W3Schools\C-Sharp\Introduction-Home\obj\Debug\net8.0\ref\Introduction-Home.dll
