@@ -53,8 +53,56 @@
                 "^=\t\t\tx ^= 3\t\tx = x ^ 3\n" +
                 ">>=\t\t\tx >>= 3\t\tx = x >> 3\n" +
                 "<<=\t\t\tx <<= 3\t\tx = x <<= 3");
-
-
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("C# Comparison Operators");
+            Console.WriteLine("Comparison operators are used to compare two values (or variables). This is important in programming, becasue it helps us to find answers and make decisions.");
+            Console.WriteLine("The return value of a comparison is either True or False. These values are know as Boolean values, and you will learn more about them in the Booleans and If...Else chapter.");
+            Console.WriteLine("In the following example, we use the greater than operator (>) to find out if 5 is greater than 3:");
+            int b = 5;
+            int c = 3;
+            bool d = b > c;
+            Console.WriteLine("int b = 5; c = 3 b > c " + d);
+            Console.WriteLine("A list of all comparison operators:");
+            Console.WriteLine("Operator\t\tName\t\t\tExample\n" +
+                "==\t\tEqual to\t\t\tx == y\n" +
+                "!=\t\tNot equal\t\t\tx != y\n" +
+                ">\t\tGreater than\t\t\tx > y\n" +
+                "<\t\tLess than\t\t\tx < y\n" +
+                ">=\t\tGreater than or equal to\tx >= y\n" +
+                "<=\t\tLess than or equal to\t\tx <= y");
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("C# Logical Operators");
+            Console.WriteLine("As with comparison operators, you can also test for True or False values with logical operators.");
+            Console.WriteLine("Logical operators are used to determine the logic between variables or values:");
+            Console.WriteLine("Operator\t\tName\t\tDescription\t\t\t\t\t\t\tExample\n" +
+                "&&\t\tLogical and\t\tReturns True if both statements are ture\t\t\tx < 5 && x < 10\n" +
+                "||\t\tLogical or\t\tReturns True if one of the statements is ture\t\t\tx < 5 || x < 4\n" +
+                "!\t\tLogical not\t\tReverse the result, returns False if the result is ture\t\t!(x < 5 && x < 10)");
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("C# Math");
+            Console.WriteLine("The C# Math class has many methods that allows you to perform mathematical tasks on numbers");
+            Console.WriteLine("Math.Max(x,y)");
+            Console.WriteLine("The Math.Max(x,y) method can be used to find the highest value of x and y:");
+            Console.WriteLine("Math.Max(5,10) = " + Math.Max(5, 10));
+            Console.WriteLine();
+            Console.WriteLine("Math.Min(x,y)");
+            Console.WriteLine("The Math.Min(x,y) method can be used to find the lowest value of of x and y:");
+            Console.WriteLine("Math.Min(5,10) = " + Math.Min(5,10));
+            Console.WriteLine();
+            Console.WriteLine("Math.Sqrt(x)");
+            Console.WriteLine("The Math.Sqrt(x) method returns the square root of x:");
+            Console.WriteLine("Math.Sqrt(64) = " + Math.Sqrt(64));
+            Console.WriteLine();
+            Console.WriteLine("Math.Abs(x)");
+            Console.WriteLine("The Math.Abs(x) method returns the absolute (positive) value of x:");
+            Console.WriteLine("Math.Abs(-4.7) = " + Math.Abs(-4.7));
+            Console.WriteLine();
+            Console.WriteLine("Math.Round()");
+            Console.WriteLine("Math.Round() rounds a number to the nearest whole number:");
+            Console.WriteLine("Math.Round(9.99) = " + Math.Round(9.99));
 
 
 
