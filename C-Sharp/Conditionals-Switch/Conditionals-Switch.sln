@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditionals-Switch", "Conditionals-Switch.csproj", "{76DB7FE9-AF44-4725-A707-42DDDE7F3825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76DB7FE9-AF44-4725-A707-42DDDE7F3825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DB7FE9-AF44-4725-A707-42DDDE7F3825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DB7FE9-AF44-4725-A707-42DDDE7F3825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DB7FE9-AF44-4725-A707-42DDDE7F3825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBA534EC-02C0-4B61-97E5-668F4DF6FF9C}
+	EndGlobalSection
+EndGlobal
