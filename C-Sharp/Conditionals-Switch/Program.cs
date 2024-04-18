@@ -1,4 +1,6 @@
-﻿namespace Conditionals_Switch
+﻿using System.Reflection.Metadata;
+
+namespace Conditionals_Switch
 {
     internal class Program
     {
@@ -42,6 +44,53 @@
                 "whether x is greater than y (using the > operator). As x is 20, and y is 18, " +
                 "and we know that 20 is greater than 18, we print to the screen that" +
                 "\"x is greater than y\"");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("C# The else Statement");
+            Console.WriteLine("Use the else statement to specify a block of code to be executed if the condition is False.");
+            int time = 22;
+            if (time < 18) 
+            {
+                Console.WriteLine("Good day.");
+            }
+            else
+            {
+                Console.WriteLine("Good evening.");
+            }
+
+            // Outputs "Good evening."
+            Console.WriteLine();
+            Console.WriteLine("Example explained");
+            Console.WriteLine("In the example above, time (22) is greater than 18 so the condition is False." +
+                " Becasue of this, we move on to the else condition and print to the screen \"Good evening\"." +
+                " If the time was less than 18, the program would print \"Good day\".");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("C# The else if Statement");
+            Console.WriteLine("Use the else if statement to specify a new condition if the first condition is False.");
+            if (time < 10) 
+            {
+                Console.WriteLine("Good morning.");
+            }
+            else if (time < 20) 
+            {
+                Console.WriteLine("Good day.");
+            }
+            else 
+            {
+                Console.WriteLine("Good evening.");
+            }
+
+            // Outputs "Good evening."
+            Console.WriteLine();
+            Console.WriteLine("Example explained");
+            Console.WriteLine("In the example above, time (22) is greater than 10 so the first condition " +
+                "is False. The next condition, in the else if statement, is also False, so we move on to " +
+                "the else condition sice condition1 and condition2 is both False - and print to the screen " +
+                "\"Good evening.\"");
+            Console.WriteLine("However, if the time was 14, our program would print \"Good day.\"");
+
+
 
         }
     }
