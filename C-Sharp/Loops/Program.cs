@@ -79,9 +79,54 @@
                     Console.WriteLine($" inner: {m}");
                 }
             }
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("C# Foreeach Loop");
+            Console.WriteLine("There is also a foreach loop, which is used exclusively to loop through elements in an array.");
+            Console.WriteLine("The following example outputs all elements in the cars array, using a foreach loop:");
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+            foreach (string n in cars)
+            {
+                Console.WriteLine(n);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("--------");
+            Console.WriteLine("C# Break and Continue");
+            Console.WriteLine("C# Break");
+            Console.WriteLine("You have already seen the break statement used in an earlier chapter of this tutorial. It was used to " +
+                "\"jump out\" of a switch statement.");
+            Console.WriteLine("The break statement can also be used to jump out of a loop.");
+            Console.WriteLine("This example jumps out of the lop when o is equal to 4:");
+            Console.WriteLine("for (int o = 0; o < 10; o++)\r\n            {\r\n                if (o == 4)\r\n                {\r\n                    break;\r\n                }\r\n\r\n                Console.WriteLine(o);\r\n            }");
+            for (int o = 0; o < 10; o++)
+            {
+                if (o == 4)
+                {
+                    break;
+                }
+
+                Console.WriteLine(o);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("C# Continue");
+            Console.WriteLine("The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.");
+            Console.WriteLine("This example skips the value of 4:");
+            Console.WriteLine("for (int p = 0; p < 10; p++)\r\n            {\r\n                if (p == 4)\r\n                {\r\n                    continue;\r\n                }\r\n                Console.WriteLine(p);\r\n            }");
+            for (int p = 0; p < 10; p++)
+            {
+                if (p == 4)
+                {
+                    continue;
+                }
+                Console.WriteLine(p);
+            }
 
 
 
+            Console.ReadLine();
 
 
 
