@@ -16,6 +16,26 @@
         {
             Console.WriteLine($"{fname} is {age}");
         }
+
+        static void MyCountryMethod(string country = "Norway") 
+        {
+            Console.WriteLine(country);
+        }
+
+        static int MyNumberMethod(int x)
+        {
+            return 5 + x;
+        }
+
+        static int MyNumbersMethod(int x, int y) 
+        {
+            return x + y;
+        }
+
+        static void MyChildMethod(string child1, string child2, string child3)
+        {
+            Console.WriteLine($"The youngest child is: {child3}");    
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("C# Methods");
@@ -63,7 +83,41 @@
             MyNameAgeMethod("Trish", 34);
             MyNameAgeMethod("Leon", 7);
             MyNameAgeMethod("Lucas", 6);
-
+            Console.WriteLine("Default Parameter Value");
+            Console.WriteLine("You can also use a default parameter value, by using the equals sign (=)");
+            Console.WriteLine("If we call the method without an argument, it uses the default value (\"Norway\")");
+            Console.WriteLine("static void MyCountryMethod(string country = \"Norway\") \r\n        {\r\n            Console.WriteLine(country);\r\n        }");
+            MyCountryMethod("Sweden");
+            MyCountryMethod("India");
+            MyCountryMethod();
+            MyCountryMethod("USA");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Return Values");
+            Console.WriteLine("In the previous examples, we used the void keyword, which indicates that the method should not return a value.");
+            Console.WriteLine("If you want the method to return a value, you can use a primitive data type (such as int or double) instead of void, and use the return keyword inside the method:");
+            Console.WriteLine("static int MyNumberMethod(int x)\r\n        {\r\n            return 5 + x;\r\n        }");
+            Console.WriteLine(MyNumberMethod(3));
+            Console.WriteLine();
+            Console.WriteLine("This example returns the sum of a method's two parameters:");
+            Console.WriteLine(MyNumbersMethod(5, 3));
+            Console.WriteLine();
+            Console.WriteLine("You can also store the result in a variable (recommended, as it is easier to read and maintain):");
+            Console.WriteLine("");
+            int z = MyNumbersMethod(7, 8);
+            Console.WriteLine($"int z = MyNumbersMethod(7, 8) = {z}");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Named Arguments");
+            Console.WriteLine("It is also possible to send arguments with the key: value syntax.");
+            Console.WriteLine("That way, the order of the arguments does not matter:");
+            Console.WriteLine("static void MyChildMethod(string child1, string child2, string child3)\r\n        {\r\n            Console.WriteLine($\"The youngest child is: {child3}\");    \r\n        }");
+            MyChildMethod(child3: "Lucas", child1: "Liam", child2: "Leon");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Method Overloading");
+            Console.WriteLine("With method overloading, multiple methods can have the same name with different parameters:");
+            
         }
     }
 }
