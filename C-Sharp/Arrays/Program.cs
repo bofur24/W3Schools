@@ -108,7 +108,42 @@
             int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
             Console.WriteLine("numbers is now an array with two arrays as its elements. The first array element contains three elements: 1, 4 and 2, while the second array element contains 3, 6 and 8. " +
                 "To visualize it, think of the array as a table with rows and columns:");
-
+            Console.WriteLine("\t\tCOLUMN 0\tCOLUMN 1\tCOLUMN 2\n" +
+                "ROW 0\t\t1\t\t4\t\t2\n" +
+                "ROW 1\t\t3\t\t6\t\t8");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Access Elemtns of a 2D Array");
+            Console.WriteLine("To access an element of a two-dimensional array, you must specify two indexes: one for the array, and one for the element inside that array. Or better yet, with the table visualization in mind;" +
+                " one for the row and one for the column (see example below).");
+            Console.WriteLine("This statement accesses the value of the element in the first row (0) and third column (2) of the numbers array:");
+            Console.WriteLine($"numbers[0, 2] Outputs {numbers[0, 2]}");
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("Change Elements of a 2D Array");
+            Console.WriteLine("You can change the value of an element.");
+            Console.WriteLine("The following example will change the value of the element in the first row (0) and frist column (0):");
+            Console.WriteLine($"numbers[0, 0] = 5 // Changes value to {numbers[0,0] = 5} instead of 1");
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("Loop Through a 2D Array");
+            Console.WriteLine("You can easily loop through the elements of a two-dimensional array with a foreach loop:");
+            Console.WriteLine("foreach (int i in numbers)\r\n            {\r\n                Console.WriteLine(i);\r\n            }");
+            foreach (int i in numbers)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
+            Console.WriteLine("You can also use a for loop. For multidimensional arrays, you need one loop for each of the array's dimensions.");
+            Console.WriteLine("Also note that we have to use GetLength() instead of Length to specify how many times the loop should run:");
+            Console.WriteLine("for (int i = 0; i < numbers.GetLength(0); i++)\r\n            {\r\n                for (int j = 0; j < numbers.GetLength(1); j++)\r\n                {\r\n                    Console.WriteLine(numbers[i, j]);\r\n                }\r\n            }");
+            for (int i = 0; i < numbers.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbers.GetLength(1); j++)
+                {
+                    Console.WriteLine(numbers[i, j]);
+                }
+            }
 
 
         }
