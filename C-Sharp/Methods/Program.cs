@@ -12,12 +12,12 @@
             Console.WriteLine($"{fname} Heffington");
         }
 
-        static void MyNameAgeMethod(string fname, int age) 
+        static void MyNameAgeMethod(string fname, int age)
         {
             Console.WriteLine($"{fname} is {age}");
         }
 
-        static void MyCountryMethod(string country = "Norway") 
+        static void MyCountryMethod(string country = "Norway")
         {
             Console.WriteLine(country);
         }
@@ -27,15 +27,26 @@
             return 5 + x;
         }
 
-        static int MyNumbersMethod(int x, int y) 
+        static int MyNumbersMethod(int x, int y)
         {
             return x + y;
         }
 
         static void MyChildMethod(string child1, string child2, string child3)
         {
-            Console.WriteLine($"The youngest child is: {child3}");    
+            Console.WriteLine($"The youngest child is: {child3}");
         }
+
+        static int PlusMethod(int x, int y)
+        {
+            return x + y;
+        }
+
+        static double PlusMethod(double x, double y)
+        {
+            return x + y;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("C# Methods");
@@ -116,7 +127,13 @@
             Console.WriteLine();
             Console.WriteLine("---------");
             Console.WriteLine("Method Overloading");
-            Console.WriteLine("With method overloading, multiple methods can have the same name with different parameters:");
+            Console.WriteLine("With method overloading, multiple methods can have the same name with different parameters.");
+            Console.WriteLine("In the example below, we overload the PlusMethod method to work for both int and double");
+            Console.WriteLine("int myNum1 = PlusMethod(8, 5);\r\n            double myNum2 = PlusMethod(4.3, 6.26);");
+            int myNum1 = PlusMethod(8, 5);
+            double myNum2 = PlusMethod(4.3, 6.26);
+            Console.WriteLine($"Int: {myNum1}");
+            Console.WriteLine($"Double: {myNum2}");
             
         }
     }
