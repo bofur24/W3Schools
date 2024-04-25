@@ -3,7 +3,21 @@ namespace Classes_Object
 {
     class Car
     {
-      public string color = "red";
+        // Class members
+        public string color = "red";    // field
+        public int maxSpeed = 200;      // field
+        public void FullThrottle()      // method
+        {
+            Console.WriteLine("The car is going as fast as it can!");
+        }
+    }
+
+    class Person
+    {
+        public string fName;
+        public string lName;
+        public int age;
+        public string gender;
     }
 
     internal class Program
@@ -66,6 +80,59 @@ namespace Classes_Object
                 "prog.cs");
             Console.WriteLine("");
             Car myObj3 = new Car();
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Class Members");
+            Console.WriteLine("Fields and methods inside classes are often referred to as \"Class Members\":");
+            Console.WriteLine("// Class members\r\npublic string color = \"red\";    // field\r\npublic int maxSpeed = 200;      // field\r\npublic void fullThrottle()      // method\r\n{\r\nConsole.WriteLine(\"The car is going as fast as it can!\");\r\n}");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Fields");
+            Console.WriteLine("In the previous chapter, you learned that variables inside a clsss are called fields, and that you cna access them by creating an object of the class, and by using the dot syntax (.).");
+            Console.WriteLine("The following example will create an object of the Car class, with the name myObj. Then we print the value of the fields color and maxSpeed:");
+            Car myObj4 = new Car();
+            Console.WriteLine($"The car obj color is {myObj4.color}");
+            Console.WriteLine($"The car obj maxspeed is {myObj4.maxSpeed}");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("You can also leave the fields blank, and modify them when creating the object:");
+            Console.WriteLine("This is especially useful when creating multiple objects of one class:");
+            Person Female = new Person();
+            Female.fName = "Trish";
+            Female.lName = "Heffington";
+            Female.age = 34;
+            Female.gender = "F";
+
+            Person Male = new Person();
+            Male.fName = "Keith";
+            Male.lName = "Heffington";
+            Male.age = 39;
+            Male.gender = "M";
+
+            Console.WriteLine($"Female First Name {Female.fName}\n" +
+                $"Female Last Name {Female.lName}\n" +
+                $"Female Age {Female.age}\n" +
+                $"Female Gender {Female.gender}");
+            Console.WriteLine();
+            Console.WriteLine($"Male First Name {Male.fName}\n" +
+                $"Male Last Name {Male.lName}\n" +
+                $"Male Age {Male.age}\n" +
+                $"Male Gender {Male.gender}");
+            Console.WriteLine();
+            Console.WriteLine("--------");
+            Console.WriteLine("Other Methods");
+            Console.WriteLine("You learned from the C# Methods chapter that methods are used to perform certain actions.");
+            Console.WriteLine("Methods normally belong to a class, and they define how an object of a class behaves.");
+            Console.WriteLine("Just like with fields, you can access methods with the dot syntax. However, note that the method must be public. And remember that we use the name of the method followed by two parentheses () and a semicolon ; to call (execute) the method:");
+            Console.WriteLine($"myObj.fullThrottle() will call the method: ");
+            myObj4.FullThrottle();
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("Use Multiple Classes");
+            Console.WriteLine("Remember from the last chapter, that we can use multiple classes for better organization (one for fields and methods, and another one for execution). This is recommended:");
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Constructors");
 
         }
     }
