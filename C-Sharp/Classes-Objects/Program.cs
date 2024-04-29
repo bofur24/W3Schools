@@ -1,6 +1,7 @@
 ﻿
 using Classes_Object;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Schema;
 
@@ -149,15 +150,120 @@ internal class Program
         Console.WriteLine("class Car2\r\n{\r\n    private readonly string model = \"Mustang\";\r\n}");
         Console.WriteLine("Public Modifier");
         Console.WriteLine("If you declare a field with a public access modifier, it is accessible for all classes");
+        Console.WriteLine("Properties (Get and Set)");
+        Console.WriteLine("Properties and Encapsulation");
+        Console.WriteLine("Before we start to explain properties, you should have a basic understanding of \"Encapsulation\".");
+        Console.WriteLine("The meaning of Encapsulation, is to make sure that \"sensitive\" data is hidden from users. To achieve this, you must:\n" +
+            "declare fields/variables as private\n" +
+            "provide public get and set methods, through properties, to access and update the value of a private field");
+        Console.WriteLine();
+        Console.WriteLine("----------");
+        Console.WriteLine("Properties");
+        Console.WriteLine("You learned from the previous chapter that private variables can only be accessed within the same class (an outside class has no access to it). However, sometimes we need to access them - and it can be done with properties.");
+        Console.WriteLine("A property is like a combination of a variable and a method, and it has two methods: a get and a set method:");
+        Console.WriteLine("Class Person\r\n{\r\nprivate string name; // field\r\n\r\npublic string name // property\r\n{\r\nget { return name; } // get method\r\nset { name = value; } // set method\r\n}\r\n}");
+        /*Class Person
+            {
+                private string name; // field
+                
+                public string name // property
+                {
+                get { return name; } // get method
+                set { name = value; } // set method
+                }
+            }
+        */
+        Console.WriteLine();
+        Console.WriteLine("Example explained");
+        Console.WriteLine("The Name property is associated with the name field. It is a good practice to use the same name for both the property and the private field, but with an uppercase first letter.");
+        Console.WriteLine("The get method returns the value of the variable name.");
+        Console.WriteLine("The set method assigns a value to the name variable. The value keyword represents the value we assign to the property.");
+        Console.WriteLine("Now we can use the Name property to access and update the private field of the Person class:");
+        Console.WriteLine("class Person1\r\n{\r\nprivate string name;        // field\r\npublic string Name;         // property\r\n{\r\nget { return name; }\r\nset { name = value; }\r\n}\r\n}");
+        Person1 myPerson = new Person1();
+        myPerson.Name = "Liam";
+        Console.WriteLine(myPerson.Name);
+        Console.WriteLine();
+        Console.WriteLine("--------");
+        Console.WriteLine("Automatic Properties (Short Hand)");
+        Console.WriteLine("C# also provides a way to use short-hand / automatic properties, where you do not have to define the field for the property, and you only have to write get; and set; inside the property.");
+        Console.WriteLine("The following example will produce the smae result as the example above. The only difference is that there is less code:");
+        Console.WriteLine("class Person2\r\n\r\npublic string Name // property\r\n{ get; set; }\r\n}");
+        /*
+        class Person2
+        {
+            public string Name // property
+            { get; set; }
+        }   
+         */
+        Person2 myPerson2 = new Person2();
+        myPerson2.Name = "Keith";
+        Console.WriteLine(myPerson2.Name);
+        Console.WriteLine();
+        Console.WriteLine("Why Encapsulation?");
+        Console.WriteLine("Better control of class members (reduce the possibility of yourself (or others) to mess up the code)\n" +
+            "Fields can be made read-only (if you only use the get method), or write-only (if you only use the set method)\n" +
+            "Flexible: the programmer can change one part of the code without affecting other parts\n" +
+            "Increased security of data");
+        Console.WriteLine();
+        Console.WriteLine("---------");
+        Console.WriteLine("Inheritance (Derived and Base Class)");
+        Console.WriteLine("In C#, it is possible to inherit fields and methods from one class to another. We group the \"inheritance concept\" into two categories:\n" +
+            "" +
+            "Derived Class (child) - the class that inherits from another class\n" +
+            "Base Class (parent) - the class being inherited from");
+        Console.WriteLine("To inherit from a class, use the : symbol.");
+        Console.WriteLine("In the example below, the Car class (child) inherits the fields and methods from the Vehicle class (parent):");
+        
+        // Create a myCar object
+        Car myCar = new Car();
+
+        // Call the honk() method (From the Vehicle class) on the myCar object
+        myCar.honk();
+
+        // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+        Console.WriteLine($"{myCar.brand} {myCar.modelName}");
+        Console.WriteLine();
+        Console.WriteLine("----------");
+        Console.WriteLine("The sealed Keyword");
+        Console.WriteLine("If you don't want other classes to inherit from a class, use the sealed keyword:");
+        Console.WriteLine("If you try to access a sealed class, C# will generate an error:\r\nsealed class Vehicle\r\n{\r\n....\r\n}\r\n\r\nclass Car : Vehicle\r\n{\r\n...\r\n}\r\nThe error message will be something like this:\r\n'Car': cannot derive from sealed type 'Vehicle'");
+        /*
+         If you try to access a sealed class, C# will generate an error:
+         sealed class Vehicle
+        {
+        ....
+        }
+
+        class Car : Vehicle
+        {
+        ...
+        }
+        The error message will be something like this:
+        'Car': cannot derive from sealed type 'Vehicle'
+         
+         */
+            
+        
     }    
     
 }
 
 namespace Classes_Object
 {
-    class Car
+    class Vehicle // Base class (parent
+    {
+        public string brand = "Ford";       // Vehicle field
+        public void honk()                  // Vehicle method
+        {
+            Console.WriteLine("Tuut, tutt!");
+        }
+    }
+    
+    class Car : Vehicle // derived class (child)
     {
         // Class members
+        public string modelName = "Mustang";
         public string color = "red";    // field
         public int maxSpeed = 200;      // field
         public void FullThrottle()      // method
@@ -190,5 +296,22 @@ namespace Classes_Object
         public string gender;
     }
 
+    class Person1
+    {
+        private string name;        // field
+        public string Name        // property
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+
+    class Person2
+    {
+        public string Name // property
+        { get; set; }
+    }
+    
+        
     
 }
