@@ -243,8 +243,41 @@ internal class Program
         'Car': cannot derive from sealed type 'Vehicle'
          
          */
-            
-        
+        Console.WriteLine();
+        Console.WriteLine("----------");
+        Console.WriteLine("Polymorphism and Overriding Methods");
+        Console.WriteLine("Polymorphism means \"many forms\", and it occurs when we have many classes that are related to each other by inheritance.");
+        Console.WriteLine("Like we specified in the previous chapter; Inheritance lets us inherit fields and methods from another class. Polymorphism uses those methods to perform differnet tasks. This allows us to perform a single action in different ways.");
+        Console.WriteLine("For example, think of a base class called Animal that has a method called animalSound(). Derived classes of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):");
+        Console.WriteLine("Now we can create Pig and Dog objects and call the animalSound() method on both of them:");
+        Animal myAnimal = new Animal(); // Create an Animal object
+        Animal myPig = new Pig();       // Create a Pig object
+        Animal myDog = new Dog();       // Creat a Dog object
+
+        // Call the Animals Sound
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound() ;
+
+        Console.WriteLine();
+        Console.WriteLine("Not the Output I was looking For");
+        Console.WriteLine("The output from the example ablve was probably not what you expected. That is because the base class method overrides the derived class method, when they share the same name.");
+        Console.WriteLine("However, C# provides an option to override the base class method, by adding the virtual keyword to the method inside, and by using the override keyword for each derived clas methods:");
+
+        Animal1 myAnimal1 = new Animal1(); // Create an Animal object
+        Animal1 myPig1 = new Pig1();       // Create a Pig object
+        Animal1 myDog1 = new Dog1();       // Creat a Dog object
+
+
+        // Call the Animals Sound
+        myAnimal1.animalSound();
+        myPig1.animalSound();
+        myDog1.animalSound();
+
+        Console.WriteLine("Why And When To Use \"Inheritance\" and \"Polymorphism\"?");
+        Console.WriteLine("- It is useful for code reusability: reuse fields and methods of an existing class when you create a new class.");
+
+
     }    
     
 }
@@ -311,7 +344,55 @@ namespace Classes_Object
         public string Name // property
         { get; set; }
     }
-    
-        
-    
+
+    class Animal // Base class (parent)
+    {
+        public void animalSound()
+        {
+            Console.WriteLine("The animal makes a sound");
+        }
+    }
+
+    class Pig : Animal // Derived class (child)
+    {
+        public void animalSound()
+        {
+            Console.WriteLine("The pig says: wee wee");
+        }
+    }
+
+    class Dog : Animal // Derived class (child)
+    {
+        public void animalSound()
+        {
+            Console.WriteLine("The dog says: bow wow");
+        }
+    }
+
+    class Animal1 // Base class (parent)
+    {
+        public virtual void animalSound()
+        {
+            Console.WriteLine("The animal makes a sound");
+        }
+    }
+
+    class Pig1 : Animal1 // Derived class (child)
+    {
+        public override void animalSound()
+        {
+            Console.WriteLine("The pig says: wee wee");
+        }
+    }
+
+    class Dog1 : Animal1 // Derived class (child)
+    {
+        public override void animalSound()
+        {
+            Console.WriteLine("The dog says: bow wow");
+        }
+    }
+
+
+
 }
