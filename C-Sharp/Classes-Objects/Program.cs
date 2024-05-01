@@ -276,7 +276,49 @@ internal class Program
 
         Console.WriteLine("Why And When To Use \"Inheritance\" and \"Polymorphism\"?");
         Console.WriteLine("- It is useful for code reusability: reuse fields and methods of an existing class when you create a new class.");
-
+        Console.WriteLine();
+        Console.WriteLine("---------");
+        Console.WriteLine("Abstract Classes and Methods");
+        Console.WriteLine("Data abstraction is the process of hiding certain details and showing only essential information to the user.");
+        Console.WriteLine("Abstraction can be achieved with either abstract classes or interfaces (which you will learn about in the next chapter).");
+        Console.WriteLine("The abstract keyword is used for classes and methods:");
+        Console.WriteLine("Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).");
+        Console.WriteLine("Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).");
+        Console.WriteLine("An abstract class can have both abstract and regular methods:");
+        Console.WriteLine();
+        // Animal2 myObj5 = new Animal2();       Will generate an error (Cannot create an instance of the abstract class or interface 'Animal')
+        Console.WriteLine("To access the abstract class, it must be inherited from another class. Let's convert the Animal class we used in the Polymorphism chapter to an abstract class.");
+        Console.WriteLine("Remember from the Inheritance chapter that we use the : symbol to inherit from a class, and that we use the override keyword to override the base class method.");
+        Pig3 myPig3 = new Pig3();        // Create a Pig object
+        myPig3.animalSound();           // Call the abstract method
+        myPig3.sleep();                 // Call the regular method
+        Console.WriteLine();
+        Console.WriteLine("Why And When To Use Abstract Classes and Methods?");
+        Console.WriteLine("To achieve security - hide certain details and only show the important details of an object.");
+        Console.WriteLine("Note: Abstraction can also be achieved with Interfaces, which you will learn more about in the next chapter.");
+        Console.WriteLine("Interface");
+        Console.WriteLine("Another way to achieve abstraction in C#, is with interfaces.");
+        Console.WriteLine("An interface is a completely \"abstract class\", which can only contain abstract methods and properties (with empty bodies):");
+        Console.WriteLine();
+        Console.WriteLine("It is considered good practice to start with the letter \"I\" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.");
+        Console.WriteLine("By default, members of an interface are abstract and public.");
+        Console.WriteLine("Note: Interfaces can contain properties and methods, but not fields.");
+        Console.WriteLine("To access the interface methods, the interface must be \"implemented\" (kinda like inherited) by another class. To implement an interface, use the : symbol (just like with inheritance). The body of the interface method is provided by the \"implement\" class. Note that you do not have to use the override keyword when implementing an interface:");
+        Console.WriteLine();
+        Pig4 myPig4 = new Pig4();
+        myPig4.animalSound();
+        Console.WriteLine();
+        Console.WriteLine("Notes on Interfaces:\n" +
+            "Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an \"IAnimal\" object in the Program class)\n" +
+            "Interface methods do not have a body - the body is provided by the \"implement\" class\n" +
+            "On implementation of an interface, you must override all of its methods\n" +
+            "Interfaces can contain properties and methods, but not fields/variables\n" +
+            "Interface members are by default abstract and public\n" +
+            "An interface cannot contain a constructor (as it cannot be used to create objects)");
+        Console.WriteLine();
+        Console.WriteLine("Why And When To Use Interfaces?");
+        Console.WriteLine("1) To achieve security - hide certain details and only show the important details of an object (interface).");
+        Console.WriteLine("2) C# does not support \"multiple inheritance\" (a class can only inherit from one base cass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).");
 
     }    
     
@@ -392,6 +434,62 @@ namespace Classes_Object
             Console.WriteLine("The dog says: bow wow");
         }
     }
+
+    abstract class Animal2
+    {
+        public abstract void animalSound();
+        public void sleep()
+        {
+            Console.WriteLine("Zzz");
+        }
+
+    }
+
+    // Abstract class
+    abstract class Animal3
+    {
+        // Abstract method (does not have a body)
+        public abstract void animalSound();
+        // Regular method
+        public void sleep()
+        {
+            Console.WriteLine("Zzzz");
+        }
+    }
+
+    // Derived class (inherit from Animal)
+    class Pig3 : Animal3
+    {
+        public override void animalSound()
+        {
+            // The body of animalSound() is provided here
+            Console.WriteLine("The pig says: wee wee");
+        }
+    }
+
+    // interface
+    interface Animal4
+    {
+        void animalSound();                 // interface method (does not have a body)
+        void run();                         // interface method (does not have a body)
+    }
+
+    // Interface
+    interface IAnimal
+    {
+        void animalSound();     // interface method (does not have a body)
+    }
+
+    // Pig4 "implements" the IAnimal interface
+    class Pig4 : IAnimal
+    {
+        public void animalSound()
+        {
+            // The body of animalSound() is provided here
+            Console.WriteLine("The pig says: wee wee");
+        }
+    }
+
 
 
 
