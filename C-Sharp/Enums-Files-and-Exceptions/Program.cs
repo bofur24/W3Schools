@@ -71,6 +71,81 @@ namespace Enums_Files_and_Exceptions
 
             string readText = File.ReadAllText("filename.txt");     // Read the contents of the file
             Console.WriteLine(readText);                            // Output the content
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("Exceptions");
+            Console.WriteLine("When executing C# code, different errors can occur: coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.");
+            Console.WriteLine("When an error occurs, C# will normally stop and generate an error message. The technical term for this is: C# will throw an exception (throw and error)");
+            Console.WriteLine();
+            Console.WriteLine("try and catch");
+            Console.WriteLine("The try statement allows you to define a block of code to be tested for errors while it is being executed.");
+            Console.WriteLine("The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.");
+            Console.WriteLine("The try and catch keywords come in pairs:");
+            Console.WriteLine("If an error occurs, we can us try...catch to catch the error and execute some code to handle it.");
+            Console.WriteLine("In the following example, we use the variable inside the catch block (e) together with the built-in Message property, which outputs a message that describes the exception:");
+            Console.WriteLine();
+            Console.WriteLine(" try\r\n{\r\nint[] myNumbers = { 1, 2, 3 };\r\nConsole.WriteLine(myNumbers[10]);\r\n}\r\ncatch (Exception e) \r\n{\r\nConsole.WriteLine(e.Message);\r\n}");
+            
+            try
+            {
+                int[] myNumbers = { 1, 2, 3 };
+                Console.WriteLine(myNumbers[10]);
+            }
+            catch (Exception e) 
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Console.WriteLine("You can also output your own error message:");
+            Console.WriteLine();
+            Console.WriteLine("try\r\n{\r\nint[] myNumbers = { 1, 2, 3 };\r\nConsole.WriteLine(myNumbers[10]);\r\n}\r\ncatch (Exception e)\r\n{\r\nConsole.WriteLine(\"Something went wrong\");\r\n}");
+
+            try
+            {
+                int[] myNumbers = { 1, 2, 3 };
+                Console.WriteLine(myNumbers[10]);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            Console.WriteLine();
+            Console.WriteLine("---------");
+            Console.WriteLine("Finally");
+            Console.WriteLine("The finally statement lets you execute code, after try...catch, regardless of the result:");
+            Console.WriteLine("try\r\n{\r\nint[] myNumbers = { 1, 2, 3 };\r\nConsole.WriteLine(myNumbers[10]);\r\n}\r\ncatch (Exception e)\r\n{\r\nConsole.WriteLine(\"Something went wrong\");\r\n}\r\nfinally\r\n{\r\nConsole.WriteLine(\"The 'try catch' is finished.\");\r\n}");
+            try
+            {
+                int[] myNumbers = { 1, 2, 3 };
+                Console.WriteLine(myNumbers[10]);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            finally
+            {
+                Console.WriteLine("The 'try catch' is finished.");
+            }
+            Console.WriteLine();
+            Console.WriteLine("The throw keyword");
+            Console.WriteLine("The throw statement allows you to create a custom error.");
+            Console.WriteLine("The throw statement is used together with an exception class. There are many exception classes available in C#: ArithmeticException, FileNotFoundException, IndexOutOfRangeException, TimeOutException, etc:");
+            Console.WriteLine("static void checkAge(int age)\r\n{\r\nif (age < 18)\r\n{\r\nthrow new ArithmeticException(\"Access denied - You must be at least 18 years old.\");\r\n}\r\nelse\r\n{\r\nConsole.WriteLine(\"Access granted - You are old enough!\");\r\n}\r\n}\r\ncheckAge(15);");
+            static void checkAge(int age)
+            {
+                if (age < 18)
+                {
+                    throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+                }
+                else
+                {
+                    Console.WriteLine("Access granted - You are old enough!");
+                }
+            }
+            Console.WriteLine("When age is below 18 the System.ArithmeticException: 'Access denied - You must be at least 18 years old. is ran");
+            checkAge(20);
+            Console.WriteLine("If age is over 18 you would not get an exception");
         }
     }
 }
