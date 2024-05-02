@@ -48,7 +48,29 @@ namespace Enums_Files_and_Exceptions
             Console.WriteLine();
             Console.WriteLine("Wy and When to Use Enums?");
             Console.WriteLine("Use enums when you have values that you know aren't going to change, like month days, days, colors, deck or cards, etc.");
-            
+            Console.WriteLine();
+            Console.WriteLine("----------");
+            Console.WriteLine("Working With Files");
+            Console.WriteLine("The File class from the System.IO namespace, allows us to work with files:");
+            Console.WriteLine("The File class has many usefull methods for creating and getting information about files. For Example:");
+            Console.WriteLine("Method\t\tDescription\n" +
+                "AppendText()\t\tAppends text at the end of an existing file\n" +
+                "Copy()\t\t\tCopies a file\n" +
+                "Create()\t\tCreates or overwrites a file\n" +
+                "Delete()\t\tDeletes a file" +
+                "Exists()\t\tTests whether the file exists\n" +
+                "ReadAllText()\t\tReads the contents of a file\n" +
+                "Replace()\t\tReplaces the contents of a file with the contents of another file\n" +
+                "WriteAllText()\t\tCreates a new file and writes the contents to it. If the file already exists, it will be overwritten.");
+            Console.WriteLine();
+            Console.WriteLine("Write To a File and Read It");
+            Console.WriteLine("In the following example, we use the WriteAllText() method to create a file named \"filename.txt\" and write some content to it. Then we use the ReadAllText() method to read the contents of the file:");
+
+            string writeText = "Hello World!";                      // Create a text string
+            File.WriteAllText("filename.txt", writeText);           // Create a file and write the content of writeText to it
+
+            string readText = File.ReadAllText("filename.txt");     // Read the contents of the file
+            Console.WriteLine(readText);                            // Output the content
         }
     }
 }
