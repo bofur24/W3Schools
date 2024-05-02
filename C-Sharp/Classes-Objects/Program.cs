@@ -319,6 +319,14 @@ internal class Program
         Console.WriteLine("Why And When To Use Interfaces?");
         Console.WriteLine("1) To achieve security - hide certain details and only show the important details of an object (interface).");
         Console.WriteLine("2) C# does not support \"multiple inheritance\" (a class can only inherit from one base cass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).");
+        Console.WriteLine();
+        Console.WriteLine("----------");
+        Console.WriteLine("Multiple interfaces");
+        Console.WriteLine("To implement multiple interfaces, separate them with a comma:");
+        DemoClass myObj5 = new DemoClass();
+        myObj5.myMethod();
+        myObj5.myOtherMethod();
+        Console.WriteLine();
 
     }    
     
@@ -487,6 +495,29 @@ namespace Classes_Object
         {
             // The body of animalSound() is provided here
             Console.WriteLine("The pig says: wee wee");
+        }
+    }
+
+    interface IFirstInterface
+    {
+        void myMethod();    // interface method
+    }
+
+    interface ISecondInterface
+    {
+        void myOtherMethod();   // interface method
+    }
+
+    // Implement multiple interfaces
+    class DemoClass : IFirstInterface, ISecondInterface
+    {
+        public void myMethod()
+        {
+            Console.WriteLine("Some Text...");
+        }
+        public void myOtherMethod()
+        {
+            Console.WriteLine("Some other text...");
         }
     }
 
