@@ -1,0 +1,12 @@
+body {
+    background-color: #1d2a35;
+    color: #fff;
+}
+
+hr {
+    border-top: 1px solid #5c6872;
+    margin: 20px;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
