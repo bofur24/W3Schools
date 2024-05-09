@@ -16,6 +16,21 @@ function move()
     }
 }
 
+//Dropdown
+
+function myDropFunc() {
+    var x = document.getElementById("Demodrop");
+    if (x.classList) {
+        x.classList.toggle("w3-show");
+    } else {
+        // Fallback for IE9
+        if  (x.className.indexOf("w3-show") == -1)
+            x.className += " w3-show";
+        else
+            x.className = x.className.replace(" w3-show", "");
+    }
+}
+
 //Accordions
 function myAccFunc(id) {
     var x = document.getElementById(id);
