@@ -99,3 +99,46 @@ function showDivs(n) {
 }
 
 showDivs(1);
+
+// Lightbox (Modal and Slideshow)
+
+function openModalLight() {
+    document.getElementById('myModalLight').style.display = "block";
+  }
+  
+  function closeModalLight() {
+    document.getElementById('myModalLight').style.display = "none";
+  }
+  
+  
+  var slideIndexLight = 1;
+  showDivsLight(slideIndexLight);
+  
+  function plusDivsLight(n) {
+    showDivsLight(slideIndexLight += n);
+  }
+  
+  
+  function currentDivLight(n) {
+    showDivsLight(slideIndexLight = n);
+  }
+  
+  function showDivsLight(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesLight");
+    var dots = document.getElementsByClassName("demoLight");
+    var captionText = document.getElementById("captionLight");
+    if (n > x.length) {slideIndexLight = 1}
+    if (n < 1) {slideIndexLight = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  
+    }
+    x[slideIndexLight-1].style.display = "block";
+    dots[slideIndexLight-1].className += " w3-opacity-off";
+    captionText.innerHTML = dots[slideIndexLight-1].alt;
+  }
+  
