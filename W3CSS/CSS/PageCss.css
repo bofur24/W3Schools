@@ -35,3 +35,10 @@ hr {
     cursor: pointer;
 }
 
+.animTest {
+    font-size: 40px;
+    padding: 64px;
+    color: red;
+    margin: 0 50px;
+}
+
