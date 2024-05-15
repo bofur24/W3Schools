@@ -141,4 +141,15 @@ function openModalLight() {
     dots[slideIndexLight-1].className += " w3-opacity-off";
     captionText.innerHTML = dots[slideIndexLight-1].alt;
   }
-  
+
+  // Animation
+
+  startAnim("Normal")
+  function startAnim(animName) {
+    var i;
+    var x = document.getElementsByClassName("animTest");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(animName).style.display = "block";
+  }
