@@ -42,3 +42,10 @@ hr {
     margin: 0 50px;
 }
 
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
