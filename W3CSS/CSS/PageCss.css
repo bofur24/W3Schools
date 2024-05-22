@@ -59,13 +59,13 @@ hr {
     font-size: 48px;
 }
 
-.w3-note1 {
-    background-color: #FFF4A3 !important;
-    color: #000;
-}
-
 .darkpagetheme {
     background-color: #FFF4A3;
     color: #000;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding: 16px 32px;
 }
   
