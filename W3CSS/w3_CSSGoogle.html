@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="CSS/PageCss.css">
+    <link rel="stylesheet" href="CSS/Fonts/google.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Allerta+Stencil'>
     <script src="https://kit.fontawesome.com/29ebd4b032.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -59,9 +65,45 @@
                 </div>            
             </div>
             <div class="w3-container">
-                <h1>W3.CSS Google</h1>
+                <h1>W3.CSS Google Fonts</h1>
             </div>
             <hr>
+            <div class="w3-panel w3-info w3-padding-64">
+                <p>With W3.CSS it is extremely easy to add new fonts.</p>
+                <ul>
+                    <li>Very easy to use (only CSS and HTML)</li>
+                    <li>unlimited use of external font libraries (Like Google Fonts)</li>
+                    <li>Works in all modern browsers</li>
+                </ul>
+            </div>
+            <div class="w3-container">
+                <p class="w3-roboto">This is Roboto</p>
+                <p class="w3-sofia">This is Sofia</p>
+                <p class="w3-sofia font-effect-fire">Sofia on Fire</p>
+                <p class="w3-tangerine">Making the Web!</p>
+                <p class="w3-lobster">Making the Web!</p>
+                <p class="w3-lobster font-effect-shadow-multiple">Making the Web!</p>
+                <p class="w3-allerta">Making the Web!</p>
+                <p class="w3-allerta w3-black w3-center">Making the Web!</p>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <h3>Using Google Fonts</h3>
+                <p>Google Fonts are free to use, and have more than 1000 fonts to choose from.</p>
+                <p>In the head of you web page, link to a Google font:</p>
+                <p>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"&gt;</p>
+                <p>Then add the CSS about where to use it:</p>
+                <p>body,h1,h2,h3,h4,h5,h6 {font-family: Roboto, sans-serif;}</p>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <h3>Create a Font Class</h3>
+                <p>in the head of your web page, link to a Google font:</p>
+                <p>Then create a font class:</p>
+                <p>.w3-sofia {<br>font-family: Sofia, cursive;<br>}</p>
+                <p>In your web page, use the font class:</p>
+                <p>&lt;p class="w3-sofia"&gt;<span class="w3-sofia">Making the Web!</span>&lt;/p&gt;</p>
+            </div>
             <div class="Containers w3-center">
                 <button class="w3-margin-bottom w3-margin-top w3-blue-gray w3-hover-text-white w3-round w3-padding" onclick="topFunction()">TOP</button>
                 <br>
