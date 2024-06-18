@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>W3CSS Text</title>
+    <title>W3CSS Round</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="CSS/PageCss.css">
@@ -66,82 +66,99 @@
                 </div>            
             </div>
             <div class="w3-container">
-                <h1>W3.CSS Text</h1>
+                <h1>W3.CSS Round</h1>
             </div>
-            <hr>
             <div class="w3-container">
-                <h3>Text Alignment</h3>
-                <p>The w3-left-align and the w3-right-lign class are used to align text.</p>
-                <div class="w3-border">
-                    <p class="w3-left-align w3-padding">Left aligned text.</p>
-                    <p class="w3-right-align w3-padding">Right aligned text.</p>
+                <div class="w3-teal w3-round-small w3-padding w3-margin-top">
+                    <p>w3-round-small</p>
                 </div>
+                <div class="w3-teal w3-round w3-padding w3-margin-top">
+                    <p>w3-round</p>
+                </div>
+                <div class="w3-teal w3-round-large w3-padding w3-margin-top">
+                    <p>w3-large</p>
+                </div>
+                <div class="w3-teal w3-round-xlarge w3-padding w3-margin-top">
+                    <p>w3-round-xlarge</p>
+                </div>
+                <div class="w3-teal w3-round-xxlarge w3-padding w3-margin-top">
+                    <p>w3-round-xxlarge</p>
+                </div>
+                <p>The w3-round-size classes add rounded corners to any HTML element:</p>
+                <table class="ws-table-all">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Defines</th>
+                        </tr>
+                        <tr>
+                            <td>w3-round</td>
+                            <td>Element rounded (border-radius) 4px</td>
+                        </tr>
+                        <tr>
+                            <td>w3-round-small</td>
+                            <td>Element rounded (border-radius) 2px</td>
+                        </tr>
+                        <tr>
+                            <td>w3-round-medium</td>
+                            <td>Element rounded (border-radius) 4px</td>
+                        </tr>
+                        <tr>
+                            <td>w3-round-large</td>
+                            <td>Element rounded (border-radius) 8px</td>
+                        </tr>
+                        <tr>
+                            <td>w3-round-xlarge</td>
+                            <td>Element rounded (border-radius) 16px</td>
+                        </tr>
+                        <tr>
+                            <td>w3-round-xxlarge</td>
+                            <td>Element rounded (border-radius) 32px</td>
+                        </tr>
+                    </thead>
+                </table>
             </div>
             <hr>
             <div class="w3-container">
-                <h3>Centering elements</h3>
-                <p>The w3-center class is used to center-align elements:</p>
+                <h3>The Circle Class</h3>
+                <p>The w3-circle class displays content inside a circle.</p>
+                <hr>
                 <div class="w3-container w3-center">
-                    <h2>Centerd Content</h2>
-                    <img src="images/img_car.jpg" alt="Car">
-                    <p>Some centered text.</p>
+                    <h2>An Image inside a Circle</h2>
+                    <img src="images/img_car.jpg" alt="Car" class="w3-circle" style="width: 300px;">
                 </div>
             </div>
             <hr>
             <div class="w3-container">
-                <h3>Wide Text</h3>
-                <p>The w3-wide class specifies a wider text:</p>
-                <p>This text is normal</p>
-                <p class="w3-wide">This text is wider.</p>
-            </div>
-            <hr>
-            <div class="w3-container">
-                <h3>Text Opacity</h3>
-                <p>The w3-opacity class is designed to work with all colors:</p>
-                <div class="w3-panel w3-pink">
-                    <h2 class="w3-opacity">Text Opacity</h2>
-                </div>
-                <div class="w3-panel w3-blue">
-                    <h2 class="w3-opacity">Text Opacity</h2>
-                </div>
-                <div class="w3-panel w3-orange">
-                    <h2 class="w3-opacity">Text Opacity</h2>
-                </div>
-                <div class="w3-panel w3-black">
-                    <h2 class="w3-opacity">Text Opacity</h2>
+                <h3>Text Inside a Circle</h3>
+                <div class="w3-padding-32 w3-red w3-circle w3-center" style="width: 350px;">
+                    <h1>Text inside a circle</h1>
                 </div>
             </div>
             <hr>
             <div class="w3-container">
-                <h3>Text shadow</h3>
-                <p>The CSS3 tex-shadow property can be used to add shadow or blur effects to text:</p>
-                <div class="w3-panel w3-border">
-                    <h2 style="text-shadow: 1px 1px 0 #444;">Text Shadow</h2>
+                <h3>A Circle Inside a Circle</h3> 
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <div class="w3-container">                        
+                            <div class="w3-circle w3-green w3-padding-32">
+                                <img src="images/img_car.jpg" alt="car" class="w3-circle" style="width: 75%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-half">
+                        <div class="w3-container">
+                            <div class="w3-circle w3-green w3-padding-32">
+                                <div class="w3-padding-32 w3-red w3-circle w3-center" style="width: 55%;">
+                                    <p class="w3-xlarge">Hello <br> W3.CSS!</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
-                <div class="w3-panel w3-blue w3-border">
-                    <h2 style="text-shadow: 1px 1px 0 #444;">Text Shadow</h2>
-                </div>
-                <div class="w3-panel w3-border w3-green">
-                    <h2 style="text-shadow: 1px 1px 0 #444;">Text Shadow</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="w3-container">
-                <h3>Special Effects</h3>
-                <div class="w3-panel w3-pink">
-                    <h2 class="w3-opacity"><b>Text Opacity + bold</b></h2>                    
-                </div>
-                <div class="w3-panel w3-amber">
-                    <h2 class="w3-text-yellow" style="text-shadow:1px 1px 0 #444;"><b>Yellow Text + Shadow + Bold</b></h2>
-                </div>
-                <div class="w3-panel w3-blue">
-                    <h2 class="w3-text-orange" style="text-shadow:1px 1px 0 #444;"><b>Orange Text + Shadow + Bold</b></h2>
-                </div>
-            </div>
-            <div class="w3-panel w3-info w3-padding-16">
-                <p>Text Shadow does not work in IE 9 and earlier.</p>
-            </div>
-
+            </div>                      
+            <hr>          
             <div class="Containers w3-center">
                 <button class="w3-margin-bottom w3-margin-top w3-blue-gray w3-hover-text-white w3-round w3-padding" onclick="topFunction()">TOP</button>
                 <br>
