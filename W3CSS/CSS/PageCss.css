@@ -61,7 +61,11 @@ hr {
 }
 
 .ws-table-all tr {
-    border-bottom: 1px solid #38444d;
+    border-bottom: 1px solid #38444d;    
+}
+
+.ws-table-all td {
+    padding: 10px;
 }
 
 .ws-table-all td:first-child {
