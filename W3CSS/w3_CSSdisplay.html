@@ -70,8 +70,182 @@
                 <h1>W3.CSS Display</h1>
             </div>                   
             <hr>
+            <div class="w3-container">
+                <p>The display classes allow you to display HTML elements in specific positions inside other HTML elements:</p>
+                <div class="w3-display-container w3-green" style="height: 250px;">
+                    <div class="w3-display-topleft w3-padding">Top Left</div>
+                    <div class="w3-display-topright w3-padding">Top Right</div>
+                    <div class="w3-display-bottomleft w3-padding">Bottom Left</div>
+                    <div class="w3-display-bottomright w3-padding">Bottom Right</div>
+                    <div class="w3-display-left w3-padding">Left</div>
+                    <div class="w3-display-right w3-padding">Right</div>
+                    <div class="w3-display-middle w3-padding">Middle</div>
+                    <div class="w3-display-topmiddle w3-padding">Top Middle</div>
+                    <div class="w3-display-bottommiddle w3-padding">Bottom Middle</div>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <h3>W3.CSS Display Classes</h3>
+                <p>W3.CSS provides the following display classes:</p>
+                <table class="ws-table-all">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Defines</th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        <tr>
+                            <td>w3-display-container</td>
+                            <td>Container for w3-display-classes</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-topleft</td>
+                            <td>Displays content at the top left corner of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-topright</td>
+                            <td>Displays content at the top right corner of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-bottomleft</td>
+                            <td>Displays content at the top bottom left corner of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-bottomright</td>
+                            <td>Displays content at the top bottom right corner of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-left</td>
+                            <td>Displays content at the (middle left) of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-right</td>
+                            <td>Displays content at the (middle right) of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-middle</td>
+                            <td>Displays content at the (center) of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-topmiddle</td>
+                            <td>Displays content at the top middle of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-bottommiddle</td>
+                            <td>Displays content at the bottom middle of the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-position</td>
+                            <td>Displays content at a specified position in the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-display-hover</td>
+                            <td>Displays content on hover inside the w3-display-container</td>
+                        </tr>
+                        <tr>
+                            <td>w3-left</td>
+                            <td>Floats an element to the left (float: left)</td>
+                        </tr>
+                        <tr>
+                            <td>w3-right</td>
+                            <td>Floats an element to the right (float: right)</td>
+                        </tr>
+                        <tr>
+                            <td>w3-show</td>
+                            <td>Shows an element (display: block)</td>
+                        </tr>
+                        <tr>
+                            <td>w3-hide</td>
+                            <td>Hides an element (display: none)</td>
+                        </tr>
+                        <tr>
+                            <td>w3-mobile</td>
+                            <td>Adds mobile-first responsiveness to an element. Displays elements as block elements on mobile devies</td>
+                        </tr>
+                    </tbody>                    
+                </table>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <p>Display text inside an image:</p>
+                <div class="w3-display-container">
+                    <img src="images/img_lights.jpg" alt="Lights" style="width: 100%;">
+                    <div class="w3-display-topleft w3-padding">Top Left</div>
+                    <div class="w3-display-topright w3-padding">Top Right</div>
+                    <div class="w3-display-bottomleft w3-padding">Bottom Left</div>
+                    <div class="w3-display-bottomright w3-padding">Bottom Right</div>
+                    <div class="w3-display-left w3-padding">Left</div>
+                    <div class="w3-display-right w3-padding">Right</div>
+                    <div class="w3-display-middle w3-padding">Middle</div>
+                    <div class="w3-display-topmiddle w3-padding">Top Middle</div>
+                    <div class="w3-display-bottommiddle w3-padding">Bottom Middle</div>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <h3>Display Hover</h3>
+                <p>The w3-display-hover class displays content on hover inside a w3-display-container (goes from hidden to shown).</p>
+                <div class="w3-display-container w3-light-grey" style="height: 300px;">
+                    <div class="w3-display-topleft w3-padding w3-display-hover">Top Left</div>
+                    <div class="w3-display-topright w3-padding w3-display-hover">Top Right</div>
+                    <div class="w3-display-bottomleft w3-padding w3-display-hover">Bottom Left</div>
+                    <div class="w3-display-bottomright w3-padding w3-display-hover">Bottom Right</div>
+                    <div class="w3-display-left w3-padding w3-display-hover">Left</div>
+                    <div class="w3-display-right w3-padding w3-display-hover">Right</div>
+                    <div class="w3-display-middle w3-padding">Mouse over this box!</div>
+                    <div class="w3-display-topmiddle w3-padding w3-display-hover">Top Middle</div>
+                    <div class="w3-display-bottommiddle w3-padding w3-display-hover">Bottom Middle</div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <p>The w3-display-hover classes can be combined with <u>effect</u> and <u>animation</u> classes to create cool hover effects:</p>
+                <div class="w3-content" style="max-width: 800px;">
+                    <div class="w3-row-padding" style="margin: 0 -16px;">
+                        <div class="w3-half">
+                            <div class="w3-display-container w3-hover-opacity" style="width: 100%;">
+                                <img src="images/img_avatar3.png" alt="Avatar" style="width: 100%;">
+                                <div class="w3-display-middle w3-display-hover w3-xlarge">
+                                    <button type="button" class="w3-button w3-black">John Doe</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-half">
+                            <div class="w3-display-container w3-opacity-min w3-hover-opacity-off" style="transition: 0.5s; width: 100%;">
+                                <img src="images/img_pants.jpg" alt="Pants" style="width: 100%;">
+                                <div class="w3-display-topleft w3-display-hover w3-large">
+                                    <button type="button" class="w3-black w3-animate-opacity w3-btn w3-margin w3-round" title="Save">
+                                        <i class="fa fa-heart w3-text-red"></i>
+                                    </button>
+                                </div>
+                                <div class="w3-display-topleft w3-display-hover w3-large" style="left: 65px;">
+                                    <button type="button" class="w3-black w3-animate-opacity w3-btn w3-margin w3-round" title="Share">
+                                        <i class="fa fa-paper-plane w3-text-grey"></i>
+                                    </button>
+                                </div>
+                                <div class="w3-display-topright w3-display-hover w3-large">
+                                    <button type="button" class="w3-black w3-animate-opacity w3-btn w3-margin w3-round" title="Shopping Cart">
+                                        <i class="fa fa-shopping-cart w3-text-grey"></i>
+                                    </button>
+                                </div>
+                                <div class="w3-display-bottomleft w3-display-hover w3-large w3-text-white">
+                                    <div class="w3-padding w3-animate-opacity">
+                                        Khaki pants, $19.99
+                                    </div>
+                                </div>
+                                <div class="w3-display-middle w3-display-hover w3-large">
+                                    <button type="button" class="w3-green w3-animate-opacity w3-btn w3-round">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-container">
 
-
+            </div>
             <div class="Containers w3-center">
                 <button class="w3-button w3-large w3-section w3-blue-gray w3-round-large w3-padding" onclick="topFunction()">TOP</button>
                 <br>
