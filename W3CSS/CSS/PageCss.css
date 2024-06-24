@@ -107,4 +107,18 @@ hr {
    background-color:  #193d3d;
 }
 
+.w3-btn-pre,
+.w3-btn-next {
+    background-color: #04aa6d;
+}
+
+.w3-btn-pre:hover,
+.w3-btn-next:hover {
+    box-shadow: none;
+    background-color: #059862;
+}
+.w3-btn-pre > a,
+.w3-btn-next > a {
+    text-decoration: none;
+}
 
